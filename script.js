@@ -9,5 +9,9 @@
 
 //display the current day at the top of the planner
 
-//standard business time stamps 9am - 5pm
+//standard business time stamps 9am - 5p
 
+var m = moment().format('MMMM Do YYYY');
+
+$("#currentDay").text(m.toString());    
+    
