@@ -31,66 +31,17 @@
     <div class="container">
       <!-- Timeblocks go here -->
          
-      <form >  
+      <form id="form" >  
         <div class="row">
-          <label class="col-1 hour">9am</label>
-          <input type="text" class="col-10 time-block">
-          <button class="col-1 saveBtn">Save</button> 
-        </div> 
+          <label for="timeblock" class="col-1 hour" id="time">9am</label>
+          <input type="text" name="timeblock" id="timeblock" class="col-10">          
+          <button class="col-1 saveBtn" id="saveBtn">Save</button> 
+        </div>
         <div class="row">
-          <label class="col-1 hour">10am</label>
-          <input type="text" class="col-10 time-block">
-          <button class="col-1 saveBtn">Save</button>
-        </div> 
-        <div class="row">
-          <label class="col-1 hour">11am</label>
-          <input type="text" class="col-10 time-block">
-          <button class="col-1 saveBtn">Save</button>
-        </div>    
-        <div class="row">
-          <label class="col-1 hour">12pm</label>
-          <input type="text" class="col-10 time-block">
-          <button class="col-1 saveBtn">Save</button>
-        </div>    
-        <div class="row">
-          <label class="col-1 hour">1pm</label>
-          <input type="text" class="col-10 time-block">
-          <button class="col-1 saveBtn">Save</button>
-        </div>    
-        <div class="row">
-          <label class="col-1 hour">2pm</label>
-          <input type="text" class="col-10 time-block">
-          <button class="col-1 saveBtn">Save</button>
-        </div>    
-        <div class="row">
-          <label class="col-1 hour">3pm</label>
-          <input type="text" class="col-10 time-block">
-          <button class="col-1 saveBtn">Save</button>
-        </div>    
-        <div class="row">
-          <label class="col-1 hour">4pm</label>
-          <input type="text" class="col-10 time-block">
-          <button class="col-1 saveBtn">Save</button>
-        </div>    
-        <div class="row">
-          <label class="col-1 hour">5pm</label>
-          <input type="text" class="col-10 time-block">
-          <button class="col-1 saveBtn">Save</button>
-        </div>               
-                  
+          <textarea class="col-12" name="timeBlock" id="render" cols="30" rows="2"></textarea>          
+        </div>  
+             
       </form>
-          
-            
-           
-              
-                     
-          
-          
-        
-      
-        
-
-      
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
