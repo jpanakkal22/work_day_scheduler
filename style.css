@@ -10,8 +10,7 @@ textarea{
   resize: none;
   color: #000000;
   border-left: 1px solid black;
-  margin-top: 0;
-    
+  padding: 10px;
 }
 
 .jumbotron {
@@ -26,34 +25,29 @@ textarea{
   white-space: pre-wrap;
 }
 
-h5{
-  text-align: right;
-}
-
 .time-block{
-  text-align: left;
+  text-align: center;
   border-radius: 15px;
-       
+  width: 50%;
+  
 }
 
 .row {
   white-space: pre-wrap;
-  height: 90px;
+  height: 80px;
   border-top: 1px solid white; 
   
-}
+    
+  }
 
+  #form{
+    text-align: center;
+  }
 
-.hour {
+ .hour {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
-  border-right: 1px dashed #000000;
-  border-bottom: 1px dashed #000000;
-  padding: 10px;
-  float: right;
-  height: 80px;
-  margin-top: 20px;
 }
 
 .past {
@@ -76,11 +70,7 @@ h5{
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
-  color: white; 
-  margin-top: 25px;
-  float: left;
-  height: 65px;
-  
+  color: white;
 }
 
 .saveBtn i:hover {
