@@ -3,52 +3,49 @@ var m = moment();
 $("#currentDay").text(m.toString());    
 console.log(m);
 
-var labelEl = document.querySelector("#time");
-var inputEl = document.querySelector("input");
-var saveButton = document.querySelector("#saveBtn");
-var render = document.querySelector("#render");
-var label = document.querySelector("label");
+var labelEl = $("#time");
+var inputEl = $("input");
+var saveButton = $("#saveBtn");
+var render = $("#render");
+var label = $("label");
 
 labelEl.textContent = "11am";
 
+renderInput()
+// colorChange();
 
-colorChange();
-
-
-saveButton.addEventListener("click", function(event){
+saveButton.on("click", function(event){
     event.preventDefault();
-    var button = event.target;
-      
-    renderInput();   
+    var button = event.target;      
+     
         
     if(inputEl === ""){
         return;
-    }
+        }
     
-    var text = inputEl.value;
+    var text = inputEl.val();
     localStorage.setItem("text", text);
-    var save = localStorage.getItem("text");
-    inputEl.textContent = save;
-
+    // renderInput(); 
+    console.log(text);
+    
 })
 
 function renderInput(){
     var renderedText = localStorage.getItem("text");
-    render.textContent = renderedText;
+    // render.textContent = renderedText;
+    inputEl.val(renderedText);
 }
 
 function colorChange(){
-    if(labelEl.textContent === "9am"){
+    if(labelEl.text === "9am"){
         render .setAttribute("class", "past");
     }
-    else if(labelEl.textContent === "10am"){
+    else if(labelEl.text === "10am"){
         render.setAttribute("class", "present");
     }
     else {
         render.setAttribute("class", "future")
-    }
-   
-   
+    }   
 }
 
 
