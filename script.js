@@ -10,7 +10,9 @@
 //5pm = 17:00
 
 var m = moment().format("MM-DD-YYYY HH:mm");
-$("#h3").text(m.toString());    
+$("#h3").text(m.toString()); 
+
+colorChange();
 
 //On-click event
 $("button").on("click", function(event){
