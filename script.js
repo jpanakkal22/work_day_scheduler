@@ -143,7 +143,7 @@ function colorChange(){
         $("#timeblock7").addClass("past");
     }
     if(block8 == n){
-        $("#timeblock1").addClass("present");
+        $("#timeblock8").addClass("present");
     }
     else if(block8 > n){
         $("#timeblock8").addClass("future");
